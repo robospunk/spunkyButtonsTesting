@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .quoteCalculator {
+    background: #C2E5FF;
+    padding: 1rem;
+    text-align: center;
+}
+
+.quoteCalculator h2 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+.quoteCalculator h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quoteCalculator fieldset {
+    border: none;
+    margin: 0 0 1rem;
+    padding: 1rem;
+}
+
+.quoteCalculator label,
+.quoteCalculator input,
+.quoteCalculator select {
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.quoteCalculator label {
+    font-weight: bold;
+}
+
+.quoteCalculator option {
+    text-align: center;
+}
+
+.quoteCalculator > div {
+    padding: 1rem 2rem;
+    border: 1px solid #1659BE;
+}
+
+#finalQuote {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#quoteDesc {
+    margin-top: 1rem;
+} */
+
+/* custom styles */
+
+.customH1 {
+	font-size: 3rem;
+	text-align: center;
+	background: #C2E5FF;
+	padding: 1rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+.customH2 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+
+/* table stuff */
+#buttonPrices {
+  font-size: 1.75rem;
+  border-spacing: 0;
+	max-width: 600px;
+	margin: auto;
+}
+
+#buttonPrices td {
+  text-align: center;
+  padding: .25rem .5rem;
+}
+
+#buttonPrices .tfoot {
+  background: #C2E5FF;
+  font-size: 1rem;
+}
+
+#buttonPrices .tableTitle {
+  background: #C2E5FF;
+  font-size: 2.5rem;
+  font-weight: bold;
+	padding: 1rem;
+}
+
+#buttonPrices .columnTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #C2E5FF;
+}
+
+#buttonPrices tr:hover {
+  background: #FFEFD0;
+}
+
+.customButtonsTitle {
+	background: #C2E5FF;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto 3rem;
+	max-width: 50rem;
+}
+
+.customButtonsTitle h1 {
+  font-size: 3.5rem;
+}
+.customButtonsTitle h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.customButtonsDescription {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.customButtonsDescription a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.customButtonsDescription p {
+  margin: 1rem;
+}
+
+.designItYourself {
+	background: #C2E5FF;
+	padding: 1rem 3rem;
+	margin: 1rem auto 4rem;
+	display: block;
+	max-width: 50rem;
+	border-radius: .25rem;
+}
+
+.designItYourself:hover {
+	background: #BC8823;
+}
+
+.shadow {
+	box-shadow: 0 .75rem 1rem -.5rem rgba(0,0,0,.1),
+                0 .5rem 2rem rgba(0,0,0,.1);
+}
+
+.inshadow {
+    box-shadow: inset 0 .75rem 1rem -.5rem rgba(0,0,0,.1),
+                inset 0 0 2rem rgba(0,0,0,.1);
+}
+
+/* contact form */
+
+.customFormStyle label {
+	font-size: 1.75rem;
+}
+
+#buttonQuantity input {
+	max-width: 100%;
+}
+
+.buttonPrice {
+	display: block;
+	padding: 1rem;
+	font-weight: bold;
+	border: 1px solid #C2E5FF;
+}
+
+.priceDesc {
+	font-weight: normal;
+	font-size: 1.25rem !important;
+	display: block;
+	margin-top: 2rem;
+}
+
+.formHelpText {
+	font-size: 1.25rem;
+	text-decoration: underline;
+}
+
+.formBoxStyle {
+	padding: 1.5rem;
+	margin: 2rem auto;
+	border-radius: .25rem
+}
+
+.customRadio > span > span > span {
+	display: block;
+}
+
+.addressFlex {
+	display: flex;
+}
+
+.g-recaptcha > div{
+	margin: 4rem auto 4rem;
+}
+
+.customSubmitStyle input {
+	display: block;
+	margin: auto;
+	font-size: 2rem;
+}
+
+/* sliders */
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 0 4rem;
+}
+
+.customCard {
+  background-color: #C2E5FF;
+  display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  height: 100vmax;
+  max-height: 540px;
+  margin: 6rem auto 0;
+  border: 1rem solid #64BEFF;
+}
+
+.customCardTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 3rem 0 4rem;
+}
+
+.customCardButton {
+	font-size: 1.75rem;
+	color: white;
+  background: #BC8823;
+	border: 2px solid #9B6E18;
+	padding: 1rem 2rem;
+}
+
+.customCardButton:hover {
+	color: white;
+	background: #3E9AEF;
+	border: 2px solid #1659BE;
+}
+
+.customCard .cardPic {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.customCard .cardPic1 {
+  background-image: url("https://spunkybuttons.com/wp-content/uploads/2018/07/blank_button_thumbnail_transparent.png");  
+}
+
+.customCard .cardSlider img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* quote calculator */
+.quoteCalculator {
+    background: #C2E5FF;
+    padding: 1rem;
+    text-align: center;
+		max-width: 400px;
+	margin: auto;
+}
+
+.quoteCalculator h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.quoteCalculator h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.quoteCalculator fieldset {
+    border: none;
+    padding: 0 1rem;
+}
+
+.quoteCalculator label,
+.quoteCalculator input,
+.quoteCalculator select {
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.quoteCalculator label {
+    font-weight: bold;
+}
+
+.quoteCalculator option {
+    text-align: center;
+}
+
+.quoteCalculator > div {
+    padding: 1rem 2rem;
+    border: 1px solid #1659BE;
+}
+
+#finalQuote {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#quoteDesc {
+    margin-top: 1rem;
+}
+
+
+/* media Queries */
+
+@media (max-width: 500px) {
+	.addressFlex {
+	display: block;
+	}
+	
+	.customCard {
+		max-height: 400px;
+	}
+	
+	.customCard .cardPic {
+		max-height: 225px;
+	}
+	
+	.customCardTitle {
+		font-size: 2rem;
+		margin: 1rem 0 1.8rem;
+	}
+}
+
+@media (min-width: 500px) {
+	.customFormStyle {
+	box-shadow: 0 .75rem 1rem -.5rem rgba(0,0,0,.1),
+                0 .5rem 2rem rgba(0,0,0,.1);
+	padding: 2rem 6rem;
+	max-width: 800px;
+	margin: 4rem auto;
+	}
+}

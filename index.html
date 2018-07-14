@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Button test stuff</title>
+</head>
+<body>
+    <div class="quoteCalculator">
+        <h2>How much do these things cost?</h2>
+        <h3>Get an instant price quote!</h3>
+        <fieldset>
+            <label for="quoteProduct">Select a product</label>
+            <select id="quoteProduct">
+                <option value="Buttons">1.25" Buttons</option>
+                <option value="Magnets" disabled>Magnets (coming soon!)</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="quoteQuantity">Quantity</label>
+            <input id="quoteQuantity" type="number" min="50" max="10000" value="50">
+        </fieldset>
+        <!-- <fieldset>
+            <label for="productSize">Select a size</label>
+            <select id="productSize">
+                <option value="1.25">1.25"</option>
+            </select>
+        </fieldset> -->
+        <!-- <fieldset>
+            <label for="productFinish">Select a finish</label>
+            <select id="productFinish">
+                <option value="normal" selected>Normal</option>
+                <option value="metal" disabled>Metallic Silver (coming soon!</option>
+                <option value="gold" disabled>Gold (coming soon!)</option>
+                <option value="sparkle" disabled>Sparkle (coming soon!)</option>
+                <option value="glow" disabled>Glow-in-the-dark (coming soon!)</option>
+            </select>
+        </fieldset> -->
+        <div>
+            <p id="finalQuote"></p>
+            <p id="quoteDesc">This quote does not include shipping or tax</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
