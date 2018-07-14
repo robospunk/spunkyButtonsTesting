@@ -8,42 +8,49 @@
     <title>Button test stuff</title>
 </head>
 <body>
-    <div class="quoteCalculator">
-        <h2>How much do these things cost?</h2>
-        <h3>Get an instant price quote!</h3>
-        <fieldset>
-            <label for="quoteProduct">Select a product</label>
-            <select id="quoteProduct">
-                <option value="Buttons">1.25" Buttons</option>
-                <option value="Magnets" disabled>Magnets (coming soon!)</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <label for="quoteQuantity">Quantity</label>
-            <input id="quoteQuantity" type="number" min="50" max="10000" value="50">
-        </fieldset>
-        <!-- <fieldset>
-            <label for="productSize">Select a size</label>
-            <select id="productSize">
-                <option value="1.25">1.25"</option>
-            </select>
-        </fieldset> -->
-        <!-- <fieldset>
-            <label for="productFinish">Select a finish</label>
-            <select id="productFinish">
-                <option value="normal" selected>Normal</option>
-                <option value="metal" disabled>Metallic Silver (coming soon!</option>
-                <option value="gold" disabled>Gold (coming soon!)</option>
-                <option value="sparkle" disabled>Sparkle (coming soon!)</option>
-                <option value="glow" disabled>Glow-in-the-dark (coming soon!)</option>
-            </select>
-        </fieldset> -->
-        <div>
-            <p id="finalQuote"></p>
-            <p id="quoteDesc">This quote does not include shipping or tax</p>
+        <div class="flex">
+            <div class="customCard">
+            <a class="cardPic cardPic1" href="https://spunkybuttons.com/1-25-round-buttons"></a>
+            <p class="customCardTitle">Custom 1.25" Buttons</p>
+            
+            <a class="customCardButton" href="https://spunkybuttons.com/1-25-round-buttons">See Prices</a>
+            </div>
+            
+            <div class="customCard">
+                <div class="cardPic cardSlider">
+                <a href="https://spunkybuttons.com/shop">
+                    <img  src="https://spunkybuttons.com/wp-content/uploads/2018/05/eyepitPhoto.jpg" alt="Eye Pit Pin">
+                    <img class="fadeIn" src="https://spunkybuttons.com/wp-content/uploads/2018/05/ghostPic-e1525805828275.jpg" alt="Ghost Pin">
+                    <img class="fadeIn" src="https://spunkybuttons.com/wp-content/uploads/2018/05/nature-pals-e1525723386788.jpg" alt="Nature Friends Pins">
+                    <img class="fadeIn" src="https://spunkybuttons.com/wp-content/uploads/2018/05/eyepitPhoto.jpg" alt="Eye Pit Pin">
+                </a>
+                </div>
+                
+                <p class="customCardTitle">Original Spunky Designs</p>
+                
+                <a class="customCardButton" href="https://spunkybuttons.com/shop">See Prices</a>
+            </div>
         </div>
-    </div>
+              
+        <div class="quoteCalculator">
+            <h2>Instant Quote Calculator!</h2>
+            <fieldset>
+                <label for="quoteProduct">Select a product</label><select id="quoteProduct">
+                    <option value="Buttons">1.25" Buttons</option>
+                    <option value="Magnets" disabled>Magnets (coming soon!)</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="quoteQuantity">Quantity</label><input id="quoteQuantity" type="number" min="50" max="10000" value="50">
+            </fieldset>
+            <div>
+                <p id="finalQuote"></p>
+                <p id="quoteDesc">This quote does not include shipping or tax</p>
+            </div>
+        </div>
+        
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

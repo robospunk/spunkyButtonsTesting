@@ -1,57 +1,3 @@
-// This is the original code
-//
-//
-// let value = document.getElementById('buttonQuantity').value;
-// let roundPrice = document.getElementById('buttonPrice');
-// let price;
-// let priceInterval;
-// let valueInterval;
-
-// function checkPrice() {
-//     valueInterval = setInterval(checkValue, 500);
-//     priceInterval = setInterval(livePrice, 500);
-// }
-
-// function checkValue() {
-//     value = document.getElementById('buttonQuantity').value;
-// }
-
-// function livePrice() {
-//     if (value < 100) {
-//         price = value * .3;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(4);
-//     } else if (value >= 100 && value < 250) {
-//         price = value * .25;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(4);
-//     } else if (value >= 250 && value < 417) {
-//         price = value * .24;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(4);
-//     } else if ( value >= 417 && value < 500) {
-//         price = value * .24;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(5);
-//     } else if ( value >= 500 && value < 1000) {
-//         price = value * .22;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(5);
-//     } else if (value >= 1000 && value < 4762) {
-//         price = value * .21;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(5);
-//     } else if (value >= 4762) {
-//         price = value * .21;
-//         price = Math.round(price * 100) / 100;
-//         roundPrice.innerText = price.toPrecision(6);
-//     }
-// }
-
-// checkPrice();
-
-
-
 // This code is for wordpress form
 //
 //
@@ -170,3 +116,12 @@ function liveQuote() {
 }
 
 updateQuote();
+
+
+// This is to animate the sliders
+//
+var fadeIn = new TimelineMax();
+
+fadeIn.staggerFrom(".fadeIn", 1, {opacity: 0, delay: 3}, 4);
+
+fadeIn.repeat(-1);
