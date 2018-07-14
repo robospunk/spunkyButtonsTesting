@@ -6,6 +6,7 @@
 
 body {
     background: #C2E5FF;
+    overflow-x: hidden;
 }
 
 /* custom styles */
@@ -291,6 +292,23 @@ body {
     margin-top: 1rem;
 }
 
+/* custom hero */
+.customHero {
+    position: relative;
+    background: url("https://spunkybuttons.com/wp-content/uploads/2018/05/iMakeButtons2-e1525728426260.jpg");
+    background-size: contain;
+    background-position: 85% center;
+    background-repeat: no-repeat;
+	margin-left: -15%;
+    width: 130%;
+    height: 500px;
+}
+
+.customHero .colorBg {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #1659BE 50%, transparent 60%);
+}
 
 /* media Queries */
 
