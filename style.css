@@ -294,24 +294,27 @@ body {
 
 /* custom hero */
 .customHero {
-    position: relative;
-    background: url("https://spunkybuttons.com/wp-content/uploads/2018/05/iMakeButtons2-e1525728426260.jpg");
-    background-size: contain;
-    background-position: 85% center;
-    background-repeat: no-repeat;
-	margin-left: -15%;
-    width: 130%;
-    height: 500px;
+  position: relative;
+  background-color: #1659BE;
+  background-image: url("https://spunkybuttons.com/wp-content/uploads/2018/07/iMakeButtons.png");
+  background-size: contain;
+  background-position: 83% center;
+  background-repeat: no-repeat;
+  margin-left: -15%;
+  width: 130%;
+  min-height: 180px;
+  height: 50vw;
+  max-height: 500px;
 }
 
-.customHero .colorBg {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to right, #1659BE 50%, transparent 60%);
+.colorBg {
+  height: 100%;
+  width: 100%;
+  background: #1659BE;
+  opacity: .4;
 }
 
 /* media Queries */
-
 @media (max-width: 500px) {
 	.addressFlex {
 	display: block;
