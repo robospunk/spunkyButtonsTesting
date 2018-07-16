@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #C2E5FF;
+    background: #64BEFF;
     overflow-x: hidden;
 }
 
@@ -292,27 +292,6 @@ body {
     margin-top: 1rem;
 }
 
-/* custom hero */
-.customHero {
-  position: relative;
-  background-color: #1659BE;
-  background-image: url("https://spunkybuttons.com/wp-content/uploads/2018/07/iMakeButtons.png");
-  background-size: contain;
-  background-position: 83% center;
-  background-repeat: no-repeat;
-  margin-left: -15%;
-  width: 130%;
-  min-height: 180px;
-  height: 50vw;
-  max-height: 500px;
-}
-
-.colorBg {
-  height: 100%;
-  width: 100%;
-  background: #1659BE;
-  opacity: .4;
-}
 
 /* media Queries */
 @media (max-width: 500px) {
