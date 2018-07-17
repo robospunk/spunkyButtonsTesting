@@ -1,20 +1,22 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    font-family: sans-serif;
 }
 
 body {
     background: #64BEFF;
+    color: #0D3C83;
+    padding: 3rem 0;
     overflow-x: hidden;
 }
 
 /* custom styles */
 
 .customH1 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	text-align: center;
-	background: #C2E5FF;
 	padding: 1rem;
 	max-width: 600px;
 	margin: auto;
@@ -25,6 +27,9 @@ body {
 	text-align: center;
 }
 
+.tcenter {
+  text-align: center;
+}
 
 /* table stuff */
 #buttonPrices {
@@ -61,8 +66,9 @@ body {
   background: #FFEFD0;
 }
 
+
+/* Custom Buttons Page */
 .customButtonsTitle {
-	background: #C2E5FF;
   padding: 1rem;
   text-align: center;
   margin: 0 auto 3rem;
@@ -115,8 +121,8 @@ body {
                 inset 0 0 2rem rgba(0,0,0,.1);
 }
 
-/* contact form */
 
+/* contact form */
 .customFormStyle label {
 	font-size: 1.75rem;
 }
@@ -168,8 +174,8 @@ body {
 	font-size: 2rem;
 }
 
-/* sliders */
 
+/* custom Cards */
 .flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -200,7 +206,8 @@ body {
 }
 
 .customCardButton {
-	font-size: 1.75rem;
+  font-size: 1.75rem;
+  text-align: center;
 	color: white;
   background: #BC8823;
 	border: 2px solid #9B6E18;
@@ -236,11 +243,12 @@ body {
 
 /* quote calculator */
 .quoteCalculator {
-    background: #C2E5FF;
-    padding: 1rem;
-    text-align: center;
-		max-width: 400px;
-	margin: auto;
+  background: #C2E5FF;
+  border: 1rem solid #EFB33E;
+  padding: 1rem 2rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 5rem auto 0;
 }
 
 .quoteCalculator h2 {
@@ -279,8 +287,7 @@ body {
 }
 
 .quoteCalculator > div {
-    padding: 1rem 2rem;
-    border: 1px solid #1659BE;
+    padding: 1rem;
 }
 
 #finalQuote {
@@ -290,6 +297,43 @@ body {
 
 #quoteDesc {
     margin-top: 1rem;
+}
+
+
+/* FAQ */
+.faqMenu {
+  position: relative;
+  margin: 3rem auto;
+  padding: 1rem 2rem 1rem 3rem;
+  border: 2px solid #0D3C83;
+  max-width: 600px;
+}
+
+.faqMenu a {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.faqMenu a:before {
+  content: "✦ ";
+  position: absolute;
+  left: .75rem;
+  margin-right: 1rem;
+}
+
+#faqDesc > div {
+  margin: 1rem auto 2rem;
+  max-width: 600px;
+}
+
+#faqDesc p {
+  margin: 1rem auto 2rem;
+}
+
+#faqDesc a {
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 
