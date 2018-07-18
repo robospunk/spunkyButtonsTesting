@@ -322,9 +322,32 @@ body {
   margin-right: 1rem;
 }
 
+#faqDesc {
+  position: relative;
+}
+
+#faqDesc > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#faqDesc > div > div img {
+  align-self: center;
+  width: 100%;
+  max-width: 310px;
+  padding: .5rem;
+}
+
 #faqDesc > div {
   margin: 1rem auto 2rem;
-  max-width: 600px;
+  padding: 1rem 2rem;
+  background: #C2E5FF;
+  max-width: 700px;
+}
+
+#faqDesc > div:target {
+  border: .5rem solid #EFB33E;
 }
 
 #faqDesc p {
@@ -344,11 +367,11 @@ body {
 	}
 	
 	.customCard {
-		max-height: 400px;
+		max-height: 450px;
 	}
 	
 	.customCard .cardPic {
-		max-height: 225px;
+		max-height: 300px;
 	}
 	
 	.customCardTitle {
