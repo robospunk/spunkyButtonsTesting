@@ -64,6 +64,8 @@ checkPrice();
 
 let quantity;
 let finalQuote = document.getElementById('finalQuote');
+let unitPrice = document.getElementById('unitPrice');
+let bargain = document.getElementById('bargain');
 let roughQuote;
 let liveQuoteInterval;
 let quantityInterval;
@@ -85,26 +87,38 @@ function liveQuote() {
             roughQuote = quantity * .3;
             roughQuote = Math.round(roughQuote * 100) / 100;
             finalQuote.innerText = "Subtotal: $" + (roughQuote.toPrecision(4));
+            unitPrice.innerText = '$0.30 each';
+            bargain.innerText = 'Get them for 25 cents each when you get 100!';
         } else if (quantity >= 100 && quantity < 250) {
             roughQuote = quantity * .25;
             roughQuote = Math.round(roughQuote * 100) / 100;
             finalQuote.innerText = "Subtotal: $" + (roughQuote.toPrecision(4));
+            unitPrice.innerText = '$0.25 each';
+            bargain.innerText = 'Get them for 24 cents each when you get 250!';
         } else if (quantity >= 250 && quantity < 417) {
             roughQuote = quantity * .24;
             roughQuote = Math.round(roughQuote * 100) / 100;
             finalQuote.innerText = "Subtotal: $" + (roughQuote.toPrecision(4));
+            unitPrice.innerText = '$0.24 each';
+            bargain.innerText = 'Get them for 22 cents each when you get 500!';
         } else if ( quantity >= 417 && quantity < 500) {
             roughQuote = quantity * .24;
             roughQuote = Math.round(roughQuote * 100) / 100;
             finalQuote.innerText = "Subtotal: $" + (roughQuote.toPrecision(5));
+            unitPrice.innerText = '$0.24 each';
+            bargain.innerText = 'Get them for 22 cents each when you get 500!';
         } else if ( quantity >= 500 && quantity < 1000) {
             roughQuote = quantity * .22;
             roughQuote = Math.round(roughQuote * 100) / 100;
             finalQuote.innerText = "Subtotal: $" + (roughQuote.toPrecision(5));
+            unitPrice.innerText = '$0.22 each';
+            bargain.innerText = 'Get them for 21 cents each when you get 1000!';
         } else if (quantity >= 1000 && quantity < 4762) {
             roughQuote = quantity * .21;
             roughQuote = Math.round(roughQuote * 100) / 100;
             finalQuote.innerText = "Subtotal: $" + (roughQuote.toPrecision(5));
+            unitPrice.innerText = '$0.21 each';
+            bargain.innerText = '';
         } else if (quantity >= 4762 && quantity <= 10000) {
             roughQuote = quantity * .21;
             roughQuote = Math.round(roughQuote * 100) / 100;
@@ -120,8 +134,10 @@ updateQuote();
 
 // This is to animate the sliders
 //
-var fadeIn = new TimelineMax();
+if (document.querySelector('.fadeIn') != null) {
+    var fadeIn = new TimelineMax();
 
-fadeIn.staggerFrom(".fadeIn", 1, {opacity: 0, delay: 3}, 4);
+    fadeIn.staggerFrom(".fadeIn", 1, {opacity: 0, delay: 3}, 4);
 
-fadeIn.repeat(-1);
+    fadeIn.repeat(-1);
+}

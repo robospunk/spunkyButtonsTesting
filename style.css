@@ -269,58 +269,70 @@ body {
 .quoteCalculator {
   background: #C2E5FF;
   border: 1rem solid #EFB33E;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0;
   text-align: center;
   max-width: 400px;
-  margin: 5rem auto 0;
+  margin: 5rem auto;
 }
 
 .quoteCalculator h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .quoteCalculator h3 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .quoteCalculator fieldset {
-    border: none;
-    padding: 0 1rem;
+  border: none;
+  padding: 0 1rem;
 }
 
 .quoteCalculator label,
 .quoteCalculator input,
 .quoteCalculator select {
-    display: block;
-    margin: 0 auto;
-    padding: .5rem;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    text-align-last: center;
+  display: block;
+  margin: 0 auto;
+  padding: .5rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  text-align-last: center;
 }
 
 .quoteCalculator label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .quoteCalculator option {
-    text-align: center;
+  text-align: center;
 }
 
 .quoteCalculator > div {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #finalQuote {
-    font-weight: bold;
-    font-size: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+#unitPrice {
+	margin: 0;
+	font-weight: bold;
+	font-size: 2rem
+}
+
+#bargain {
+	margin: 0;
 }
 
 #quoteDesc {
-    margin-top: 1rem;
+  margin-top: 2rem;
+	font-size: 1.2rem;
 }
 
 
