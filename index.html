@@ -11,12 +11,19 @@
   
     <div class="flex">
         <div class="customCard">
-        <a class="cardPic cardPic1" href="https://spunkybuttons.com/1-25-round-buttons"></a>
+        <a class="cardPic cardPic1" href="https://spunkybuttons.com/choose-button"></a>
         <p class="customCardTitle">Custom 1.25" Buttons</p>
         
-        <a class="customCardButton" href="https://spunkybuttons.com/1-25-round-buttons">Order Custom Buttons!</a>
+        <a class="customCardButton" href="https://spunkybuttons.com/choose-button">Order Custom Buttons!</a>
         </div>
         
+        <div class="customCard">
+            <a href="https://spunkybuttons.com/choose-magnet" class="cardPic cardPicMagnet"></a>
+            <p class="customCardTitle">Custom 1.25" Magnets</p>
+
+            <a href="https://spunkybuttons.com/choose-magnet" class="customCardButton">Order Custom Magnets!</a>
+        </div>
+
         <div class="customCard">
             <div class="cardPic cardSlider">
             <a href="https://spunkybuttons.com/shop">
@@ -37,12 +44,18 @@
         <h2>Instant Quote Calculator!</h2>
         <fieldset>
             <label for="quoteProduct">Select a product</label><select id="quoteProduct">
-                <option value="Buttons">1.25" Buttons</option>
-                <option value="Magnets" disabled>Magnets (coming soon!)</option>
+                <option value="buttons">1.25" Buttons</option>
+                <option value="magnets">Magnets</option>
+            </select>
+        </fieldset>
+        <fieldset class="finish">
+            <label for="quoteProduct">Select a finish</label><select id="quoteFinish">
+                <option value="standard">Standard</option>
+                <option value="foil">Gold, Silver or Sparkle</option>
             </select>
         </fieldset>
         <fieldset>
-            <label for="quoteQuantity">Quantity</label><input id="quoteQuantity" type="number" min="50" max="10000" value="50">
+            <label for="quoteQuantity">Quantity</label><input id="quoteQuantity" type="number" min="25" max="10000" value="50">
         </fieldset>
         <div class="inshadow">
             <p id="finalQuote"></p>

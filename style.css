@@ -14,6 +14,10 @@ body {
 
 /* custom styles */
 
+.hidden {
+  display: none;
+}
+
 .customH1 {
   font-size: 4rem;
   font-weight: bold;
@@ -33,6 +37,14 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
 	text-align: center;
+}
+
+.customP {
+  max-width: 600px;
+}
+
+.center {
+  margin: auto;
 }
 
 .tcenter {
@@ -80,34 +92,29 @@ body {
 
 
 /* Custom Buttons Page */
-.customButtonsTitle {
-  padding: 1rem;
-  text-align: center;
-  margin: 0 auto 3rem;
-	max-width: 50rem;
+
+.flexThumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.customButtonsTitle h1 {
-  font-size: 3.5rem;
-}
-.customButtonsTitle h2 {
-  font-size: 2rem;
+.flexThumb a {
   margin: 1rem;
-}
-
-.customButtonsDescription {
-  text-align: center;
-  font-size: 2rem;
   padding: 1rem;
+  background: #C2E5FF;
+	width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transition: all 150ms ease-in-out;
 }
 
-.customButtonsDescription a {
-  color: inherit;
-  font-weight: bold;
+.flexThumb a:hover {
+  transform: scale(1.02);
 }
 
-.customButtonsDescription p {
-  margin: 1rem;
+.flexThumb img {
+  width: 100%;
 }
 
 .designItYourself {
@@ -154,6 +161,12 @@ body {
 	padding: 1rem;
 	font-weight: bold;
 	border: 1px solid #C2E5FF;
+}
+
+#formUnitPrice,
+#formBargain {
+	font-size: 1.25rem !important;
+	display: block;
 }
 
 .priceDesc {
@@ -255,7 +268,11 @@ body {
 }
 
 .customCard .cardPic1 {
-  background-image: url("https://spunkybuttons.com/wp-content/uploads/2018/07/blank_button_thumbnail_transparent.png");  
+  background-image: url("https://spunkybuttons.com/wp-content/uploads/2018/08/blank_button_thumbnail_transparent_noshadow.png");  
+}
+
+.cardPicMagnet {
+  background-image: url("https://spunkybuttons.com/wp-content/uploads/2018/08/blank_magnet_thumbnail_transparent.png");
 }
 
 .customCard .cardSlider img {
